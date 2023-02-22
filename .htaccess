@@ -1,0 +1,17 @@
+Options -Indexes
+RewriteEngine On
+
+RewriteRule .admin$ Admin.php [NC]
+RewriteRule ^posts$ Posts.php [NC]
+RewriteRule ^my_posts$ User_Posts.php [NC]
+
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ Index.php [NC,L]
+
+<FilesMatch "Admin.php$">
+    AuthType Basic
+    AuthName "Admins Only"
+    AuthUserFile D:\foo\.htpasswd
+    Require valid-user
+</FilesMatch>
