@@ -5,4 +5,4 @@
 ## As a admin, you can: Censor or Delete a user's post.
 # [ACCOUNTs]
 ## You can login and sing in the system.
-## Web you logged, you can: change you password and Delete or Close your account.
+## Wen you logged on the system,<br> you can: change you password and Delete or Close your account.
